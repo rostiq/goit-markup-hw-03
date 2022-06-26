@@ -66,9 +66,10 @@ body {
 
 .container {
     width: 100%;
-    max-width: 1200px;
+    width: 1200px;
     margin: 0 auto;
-    padding: 0;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .section {
@@ -78,9 +79,8 @@ body {
 
 /* header *//* header *//* header *//* header *//* header *//* header *//* header *//* header *//* header *//* header */
 
-.header-line {
-    margin: 0;
-    border: 1px solid #ececec;
+.header {
+    border-bottom: 1px solid #ececec;
 }
 
 .header-inner {
@@ -122,6 +122,11 @@ body {
     margin-left: 50px;
 }
 
+.pages-list-links {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
 .header-contacts {
     flex-basis: 26%;
     display: flex;
@@ -143,6 +148,8 @@ body {
 
 .hero {
     background-color: var(--hero-and-footer-color);
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 .visually-hidden {
@@ -166,13 +173,12 @@ body {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: #fff;
-    padding-top: 106px;
     margin-bottom: 30px;
 }
 
 .interaction {
-    margin: 0 auto;
     display: block;
+    margin: 0 auto;
     border-style: none;
     cursor: pointer;
     font-family: inherit;
@@ -185,7 +191,6 @@ body {
     background: var(--brand-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    margin-bottom: 106px;
 }
 
 .interaction:hover {
@@ -200,16 +205,17 @@ body {
 }
 
 /* .benefits *//* .benefits *//* .benefits *//* .benefits *//* .benefits *//* .benefits *//* .benefits */
-.benefits-container {
-    margin-bottom: -94px;
-}
 
 .benefits {
+    padding-bottom: 0;
+}
+
+.benefits-list {
     display: flex;
     justify-content: space-between;
 }
 
-.benefits-list {
+.benefits-item {
     flex-basis: 22%;
 }
 
@@ -234,7 +240,7 @@ body {
 .activity-title{
     font-weight: 700;
     font-size: 36px;
-    line-height: 1.66;
+    line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
     margin-bottom: 50px;
@@ -254,7 +260,7 @@ body {
 .team-title {
     font-weight: 700;
     font-size: 36px;
-    line-height: 1.66;
+    line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
     margin-bottom: 50px;
@@ -277,7 +283,6 @@ body {
     line-height: 1.18;
     text-align: center;
     letter-spacing: 0.03em;
-    margin-top: 30px;
     margin-bottom: 10px;
 }
 
@@ -287,7 +292,10 @@ body {
     text-align: center;
     letter-spacing: 0.03em;
     color: #757575;
-    margin-bottom: 30px;
+}
+
+.team-member {
+    padding: 30px;
 }
 
 /* portfolio *//* portfolio *//* portfolio *//* portfolio *//* portfolio *//* portfolio *//* portfolio *//* portfolio *//* portfolio */
@@ -365,12 +373,13 @@ body {
 
 .footer {
     background-color: var(--hero-and-footer-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .footer-logo {
     display: block;
-    padding-top: 60px;
-    padding-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .logo-studio-footer {
@@ -387,25 +396,18 @@ body {
     letter-spacing: 0.03em;
 }
 
-.address-list {
-    padding-bottom: 60px;
+.footer-links {
+    text-decoration: none;
 }
 
 .map-link {
     color: #fff;
-    text-decoration: none;
-    padding-top: 10px;
-    padding-bottom: 9px;
 }
 
-.footer-mail {
+.footer-contacts {
     color: rgba(255, 255, 255, 0.6);
-    text-decoration: none;
-    padding-bottom: 9px;
 }
 
-.footer-phone {
-    color: rgba(255, 255, 255, 0.6);
-    text-decoration: none;
-    padding-bottom: 20px;
+.address-item:not(:last-child) {
+    margin-bottom: 9px;
 }
